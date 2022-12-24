@@ -1,5 +1,27 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Header = styled('h1')`
+  padding: 8px;
+  text-align: center;
+`;
+
+const Link = styled('a')`
+  text-decoration: none;
+  color: #00bdd8;
+
+  &:hover {
+    color: #90eae8;
+  }
+`;
 
 export function Main() {
-  return <div>Main Page is Here!!</div>;
+  return (
+    <Header>
+      Desafios do{' '}
+      <Link href="https://codar.me/input" target="_blank" rel="noreferrer">
+        Curso Input | Codar.me
+      </Link>
+    </Header>
+  );
 }
