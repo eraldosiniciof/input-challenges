@@ -1,5 +1,7 @@
+import React from 'react';
+
 function App() {
-  return <div>Clear React App</div>
+  return <div>Clear React App</div>;
 }
 
-export default App
+export default App;
