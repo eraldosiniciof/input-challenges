@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { LevelOne } from '~/pages/LevelOne';
 
 const Header = styled('h1')`
   padding: 8px;
@@ -17,11 +18,15 @@ const Link = styled('a')`
 
 export function Main() {
   return (
-    <Header>
-      Desafios do{' '}
-      <Link href="https://codar.me/input" target="_blank" rel="noreferrer">
-        Curso Input | Codar.me
-      </Link>
-    </Header>
+    <>
+      <Header>
+        Desafios do{' '}
+        <Link href="https://codar.me/input" target="_blank" rel="noreferrer">
+          Curso Input | Codar.me
+        </Link>
+      </Header>
+
+      <LevelOne />
+    </>
   );
 }
