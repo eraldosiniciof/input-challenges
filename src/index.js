@@ -1,27 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { GlobalStyle } from '~/components/Theme/GlobalStyle';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { CardPix } from './pages/LevelOne/CardPix';
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-  },
-  {
-    path: '/card-pix',
-    element: <CardPix />,
-  },
-]);
+import { App } from './pages';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <GlobalStyle />
-    <RouterProvider router={router} />
+    <App />
   </React.StrictMode>
 );
 
