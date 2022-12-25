@@ -1,14 +1,14 @@
 import React from 'react';
 import t from 'prop-types';
 
-import { Box, Description } from './styles';
+import { Button, Description, Box } from './styles';
 
 export function Option({ to, name, description }) {
   return (
-    <>
-      <Box to={to}>{name}</Box>
+    <Box>
+      <Button to={to}>{name}</Button>
       <Description>{description}</Description>
-    </>
+    </Box>
   );
 }
 
