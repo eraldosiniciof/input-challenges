@@ -30,6 +30,12 @@ export function LevelOne() {
         name="Comentário"
         description="Card centralizado com Avatar, Nome, Horário relativo e Comentários"
       />
+
+      <Option
+        to="/card-with-image"
+        name="Card + Img"
+        description="Card centralizado com imagem de capa, título, exibição de perfil e icones de comentários e visualizações"
+      />
     </Container>
   );
 }
