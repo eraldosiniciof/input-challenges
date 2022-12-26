@@ -6,6 +6,7 @@ Started project with CRA for practice React base concepts
 
 - Project with `editorconfig` and `eslint` for follow default config for all files
 - Components make with `Styled Components`
+- I'm repeating some codes intentionally for practice. In fthe future I can refactor to abstract some things
 
 # For local execution:
 

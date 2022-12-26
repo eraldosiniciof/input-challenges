@@ -4,10 +4,12 @@ import t from 'prop-types';
 
 import { ReactComponent as logoPix } from './svgs/LogoPix.svg';
 import { ReactComponent as avatar } from './svgs/Avatar.svg';
+import { ReactComponent as avatar02 } from './svgs/Avatar02.svg';
 
 const icons = {
   logoPix,
   avatar,
+  avatar02,
 };
 
 const StyledIcon = styled('svg')`
