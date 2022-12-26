@@ -18,6 +18,12 @@ export function LevelOne() {
         description="Card Pix centralizado (vertical
       e horizontal) com efeito hover"
       />
+
+      <Option
+        to="/profile"
+        name="Perfil"
+        description="Card centralizado com Avatar, Nome e Descrição"
+      />
     </Container>
   );
 }
