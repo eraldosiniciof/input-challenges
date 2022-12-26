@@ -11,7 +11,7 @@ export const Title = styled('h2')``;
 export function LevelOne() {
   return (
     <Container>
-      <Title>Desafios de Nível 1</Title>
+      <Title>Desafios de Nível 1 ✅</Title>
       <Option
         to="/card-pix"
         name="Cartão Pix"
