@@ -6,6 +6,7 @@ import { CardPix } from './LevelOne/CardPix';
 import { Profile } from './LevelOne/Profile';
 import { Comment } from './LevelOne/Comment';
 import { CardWithImage } from './LevelOne/CardWithImage';
+import { Menu } from './LevelTwo/Menu';
 
 const AllRoutes = () => (
   <Routes>
@@ -14,6 +15,7 @@ const AllRoutes = () => (
     <Route path="/profile" element={<Profile />} />
     <Route path="/comment" element={<Comment />} />
     <Route path="/card-with-image" element={<CardWithImage />} />
+    <Route path="/menu" element={<Menu />} />
   </Routes>
 );
 
