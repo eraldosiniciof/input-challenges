@@ -24,6 +24,12 @@ export function LevelOne() {
         name="Perfil"
         description="Card centralizado com Avatar, Nome e Descrição"
       />
+
+      <Option
+        to="/comment"
+        name="Comentário"
+        description="Card centralizado com Avatar, Nome, Horário relativo e Comentários"
+      />
     </Container>
   );
 }
