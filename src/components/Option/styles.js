@@ -17,8 +17,9 @@ export const Button = styled(Link)`
   text-align: center;
   padding: 10px;
   border-radius: 8px;
-  width: 100px;
   text-decoration: none;
+  min-width: 90px;
+  max-width: 90px;
 
   &:hover {
     background-color: #90eae8;

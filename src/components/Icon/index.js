@@ -3,9 +3,11 @@ import styled from 'styled-components';
 import t from 'prop-types';
 
 import { ReactComponent as logoPix } from './svgs/LogoPix.svg';
+import { ReactComponent as avatar } from './svgs/Avatar.svg';
 
 const icons = {
   logoPix,
+  avatar,
 };
 
 const StyledIcon = styled('svg')`
