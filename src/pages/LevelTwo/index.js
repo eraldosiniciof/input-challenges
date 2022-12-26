@@ -18,6 +18,12 @@ export function LevelTwo() {
         to="/menu"
         description="Desenvolver um Menu de um site"
       />
+
+      <Option
+        name="Likes"
+        to="/comments-like"
+        description="Lista de comentários com possibilidade de curtir (exibir quantos likes a pessoa teve)"
+      />
     </Container>
   );
 }
