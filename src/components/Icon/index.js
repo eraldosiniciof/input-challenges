@@ -12,6 +12,7 @@ import { ReactComponent as classes } from './svgs/Classes.svg';
 import { ReactComponent as community } from './svgs/Community.svg';
 import { ReactComponent as start } from './svgs/Start.svg';
 import { ReactComponent as support } from './svgs/Support.svg';
+import { ReactComponent as like } from './svgs/Like.svg';
 
 const icons = {
   logoPix,
@@ -24,6 +25,7 @@ const icons = {
   community,
   start,
   support,
+  like,
 };
 
 const StyledIcon = styled('svg')`
