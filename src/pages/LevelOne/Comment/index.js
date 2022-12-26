@@ -44,16 +44,17 @@ const Card = styled('div')`
 
   justify-content: flex-start;
 
-  padding: 12px 24px;
+  padding: 12px 56px;
 
-  width: 60vw;
-  height: 16vh;
+  width: 720px;
+  height: 128px;
   border-radius: 32px;
 
   background-color: #ffffff;
 
   @media screen and (max-width: 400px) {
-    width: 80vw;
+    padding: 10px 20px;
+    width: 330px;
     height: 10vh;
   }
 `;
