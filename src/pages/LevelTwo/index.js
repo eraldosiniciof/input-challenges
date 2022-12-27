@@ -11,7 +11,7 @@ const Title = styled('h2')``;
 export function LevelTwo() {
   return (
     <Container>
-      <Title>Desafios de Nível 2 🚧</Title>
+      <Title>Desafios de Nível 2 ✅</Title>
 
       <Option
         name="Menu"
@@ -29,6 +29,12 @@ export function LevelTwo() {
         name="Galeria"
         to="/best-pictures"
         description="Card com imagens com estilo de coleções em galeria de fotos"
+      />
+
+      <Option
+        name="Hero Input"
+        to="/hero-input"
+        description="Página inicial do curso Input"
       />
     </Container>
   );

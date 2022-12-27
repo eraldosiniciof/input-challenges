@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { LevelOne } from '~/pages/LevelOne';
 import { LevelTwo } from '~/pages/LevelTwo';
+import { LevelThree } from '~/pages/LevelThree';
 
 const Container = styled('div')`
   display: flex;
@@ -50,6 +51,7 @@ export function Main() {
 
       <LevelOne />
       <LevelTwo />
+      <LevelThree />
     </Container>
   );
 }

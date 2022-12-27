@@ -13,6 +13,9 @@ import { ReactComponent as community } from './svgs/Community.svg';
 import { ReactComponent as start } from './svgs/Start.svg';
 import { ReactComponent as support } from './svgs/Support.svg';
 import { ReactComponent as like } from './svgs/Like.svg';
+import { ReactComponent as lightning } from './svgs/Lightning.svg';
+import { ReactComponent as logo } from './svgs/Logo.svg';
+import { ReactComponent as user } from './svgs/User.svg';
 
 const icons = {
   logoPix,
@@ -26,6 +29,9 @@ const icons = {
   start,
   support,
   like,
+  lightning,
+  logo,
+  user,
 };
 
 const StyledIcon = styled('svg')`

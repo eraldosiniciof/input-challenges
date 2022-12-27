@@ -9,6 +9,7 @@ import { CardWithImage } from './LevelOne/CardWithImage';
 import { Menu } from './LevelTwo/Menu';
 import { CommentsWithLike } from './LevelTwo/CommentsWithLike';
 import { BestPicture } from './LevelTwo/BestPictures';
+import { HeroInput } from './LevelTwo/HeroInput';
 
 const AllRoutes = () => (
   <Routes>
@@ -20,6 +21,7 @@ const AllRoutes = () => (
     <Route path="/menu" element={<Menu />} />
     <Route path="/comments-like" element={<CommentsWithLike />} />
     <Route path="/best-pictures" element={<BestPicture />} />
+    <Route path="/hero-input" element={<HeroInput />} />
   </Routes>
 );
 
