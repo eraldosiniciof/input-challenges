@@ -48,20 +48,19 @@ const BoxHeader = styled('div')`
   gap: 8px;
 
   margin-bottom: 16px;
+  margin-left: 17%;
 `;
 
 const Title = styled('div')`
-  font-size: 24px;
+  font-size: 18px;
   color: #787491;
 `;
 
 const BoxDay = styled('div')`
-  font-size: 48px;
-  font-weight: bold;
+  font-size: 36px;
 
   @media screen and (max-width: 400px) {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 18px;
   }
 `;
 
