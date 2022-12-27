@@ -24,6 +24,12 @@ export function LevelTwo() {
         to="/comments-like"
         description="Lista de comentários com possibilidade de curtir (exibir quantos likes a pessoa teve)"
       />
+
+      <Option
+        name="Galeria"
+        to="/best-pictures"
+        description="Card com imagens com estilo de coleções em galeria de fotos"
+      />
     </Container>
   );
 }

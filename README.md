@@ -7,6 +7,7 @@ Started project with CRA for practice React base concepts
 - Project with `editorconfig` and `eslint` for follow default config for all files
 - Components make with `Styled Components`
 - I'm repeating some codes intentionally for practice. In fthe future I can refactor to abstract some things
+- `date-fns`package added for to deal with week day
 
 # For local execution:
 
