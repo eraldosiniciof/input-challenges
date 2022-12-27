@@ -1,9 +1,17 @@
 import React, { useState } from 'react';
 
+import styled from 'styled-components';
+
 import img from '~/assets/img/img.png';
 import profile from '~/assets/img/profile.png';
 
 import { GenericCardWithImage } from '~/components/GenericCardWithImage';
+
+const Container = styled('div')`
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+`;
 
 export function CardWithImage() {
   const [mockData] = useState([
@@ -17,5 +25,9 @@ export function CardWithImage() {
       nView: 24,
     },
   ]);
-  return <GenericCardWithImage data={mockData} />;
+  return (
+    <Container>
+      <GenericCardWithImage data={mockData} />
+    </Container>
+  );
 }
