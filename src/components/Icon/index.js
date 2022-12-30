@@ -16,6 +16,11 @@ import { ReactComponent as like } from './svgs/Like.svg';
 import { ReactComponent as lightning } from './svgs/Lightning.svg';
 import { ReactComponent as logo } from './svgs/Logo.svg';
 import { ReactComponent as user } from './svgs/User.svg';
+import { ReactComponent as board } from './svgs/Board.svg';
+import { ReactComponent as check } from './svgs/Check.svg';
+import { ReactComponent as frame } from './svgs/Frame.svg';
+import { ReactComponent as remove } from './svgs/Remove.svg';
+import { ReactComponent as task } from './svgs/Task.svg';
 
 const icons = {
   logoPix,
@@ -32,6 +37,11 @@ const icons = {
   lightning,
   logo,
   user,
+  board,
+  check,
+  frame,
+  remove,
+  task,
 };
 
 const StyledIcon = styled('svg')`
