@@ -1,7 +1,8 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import { Main } from '~/pages/Main';
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CardPix } from './LevelOne/CardPix';
 import { Profile } from './LevelOne/Profile';
 import { Comment } from './LevelOne/Comment';
@@ -10,6 +11,7 @@ import { Menu } from './LevelTwo/Menu';
 import { CommentsWithLike } from './LevelTwo/CommentsWithLike';
 import { BestPicture } from './LevelTwo/BestPictures';
 import { HeroInput } from './LevelTwo/HeroInput';
+import { ToDoList } from './LevelThree/ToDoList';
 
 const AllRoutes = () => (
   <Routes>
@@ -22,6 +24,7 @@ const AllRoutes = () => (
     <Route path="/comments-like" element={<CommentsWithLike />} />
     <Route path="/best-pictures" element={<BestPicture />} />
     <Route path="/hero-input" element={<HeroInput />} />
+    <Route path="/to-do-list" element={<ToDoList />} />
   </Routes>
 );
 
