@@ -78,6 +78,8 @@ export const InputButton = styled('button')`
   border-radius: 16px;
   background-color: #02b553;
 
+  outline: none;
+
   font-size: 16px;
   color: #fff;
 

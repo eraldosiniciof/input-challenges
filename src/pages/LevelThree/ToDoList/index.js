@@ -29,8 +29,9 @@ export function ToDoList() {
   const [createdTask, setCreatedTask] = useState('');
 
   function handleCreate(task) {
+    const ref = new Date().getTime();
     const obj = {
-      id: tasks?.length > 0 ? tasks?.length + 1 : 1,
+      id: tasks?.length > 0 ? `${tasks?.length + 1}-${ref}` : `1-${ref}`,
       task,
       resolved: false,
     };
@@ -43,25 +44,32 @@ export function ToDoList() {
   }
 
   function handleStatus(item) {
-    const indexTask = tasks.indexOf(item);
-    const tempTasks = tasks;
+    setTasks((prevState) => {
+      const indexTask = prevState.indexOf(item);
+      prevState[indexTask].resolved = !prevState[indexTask].resolved;
 
-    tempTasks[indexTask].resolved = !item.resolved;
-
-    setTasks(tempTasks);
+      return [...prevState];
+    });
   }
 
   function handleRemove(item) {
-    const indexTask = tasks.indexOf(item);
-    const tempTasks = tasks;
-
     const shouldRemove = confirm(
       `Tem certeza que deseja excluir a tarefa: ${item.task}?`
     );
 
     if (shouldRemove) {
-      tempTasks.splice(indexTask, 1);
-      setTasks(tempTasks);
+      setTasks((prevState) => {
+        const index = prevState.indexOf(item);
+        prevState.splice(index, 1);
+
+        return [...prevState];
+      });
+    }
+  }
+
+  function handleKeyDown(key) {
+    if (key === 'Enter') {
+      handleCreate(createdTask);
     }
   }
 
@@ -76,6 +84,7 @@ export function ToDoList() {
           <InputBox>
             <InputText
               onChange={({ target }) => handleChange(target.value)}
+              onKeyDown={({ key }) => handleKeyDown(key)}
               placeholder="Descreva a Tarefa"
             ></InputText>
             <InputButton onClick={() => handleCreate(createdTask)}>
@@ -93,20 +102,15 @@ export function ToDoList() {
           {tasks?.length > 0 ? (
             <ListTaskBox>
               {tasks?.map((data) => (
-                <TaskItem
-                  key={`key-${data?.id}/${new Date().getTime()}`}
-                  resolved={data?.resolved}
-                >
+                <TaskItem key={data.id} resolved={data.resolved}>
                   <BoxClick onClick={() => handleStatus(data)}>
                     <CheckAndTask>
-                      {data?.resolved ? (
+                      {data.resolved ? (
                         <Icon name="check" />
                       ) : (
                         <Icon name="frame" />
                       )}
-                      <TaskText resolved={data?.resolved}>
-                        {data?.task}
-                      </TaskText>
+                      <TaskText resolved={data.resolved}>{data.task}</TaskText>
                     </CheckAndTask>
                   </BoxClick>
                   <BoxClick onClick={() => handleRemove(data)}>
